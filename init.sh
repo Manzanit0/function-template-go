@@ -17,5 +17,7 @@ perl -pi -e s,function-template-go,"$1",g go.mod
 perl -pi -e s,function-template-go,"$1",g fn.go
 # in examples
 perl -pi -e s,function-template-go,"$1",g example/*
+# in crossplane resources
+perl -pi -e s,function-template-go,"$1",g package/crossplane.yaml
 
 echo "Function $1 has been initialised successfully"
